@@ -10,19 +10,19 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4"><iframe id="u0" frameborder="0" allowfullscreen></iframe></div>
-            <div class="col-md-4"><iframe id="u1" frameborder="0" allowfullscreen></iframe></div>
-            <div class="col-md-4"><iframe id="u2" frameborder="0" allowfullscreen></iframe></div>
+            <div class="col-md-4"><iframe id="u0"></iframe></div>
+            <div class="col-md-4"><iframe id="u1"></iframe></div>
+            <div class="col-md-4"><iframe id="u2"></iframe></div>
         </div>
         <div class="row">
-            <div class="col-md-4"><iframe id="u3" frameborder="0" allowfullscreen></iframe></div>
-            <div class="col-md-4"><iframe id="u4" frameborder="0" allowfullscreen></iframe></div>
-            <div class="col-md-4"><iframe id="u5" frameborder="0" allowfullscreen></iframe></div>
+            <div class="col-md-4"><iframe id="u3"></iframe></div>
+            <div class="col-md-4"><iframe id="u4"></iframe></div>
+            <div class="col-md-4"><iframe id="u5"></iframe></div>
         </div>
         <div class="row">
-            <div class="col-md-4"><iframe id="u6" frameborder="0" allowfullscreen></iframe></div>
-            <div class="col-md-4"><iframe id="u7" frameborder="0" allowfullscreen></iframe></div>
-            <div class="col-md-4"><iframe src="" frameborder="0" allowfullscreen></iframe></div>
+            <div class="col-md-4"><iframe id="u6"></iframe></div>
+            <div class="col-md-4"><iframe id="u7"></iframe></div>
+            <div class="col-md-4"><iframe id="u8"></iframe></div>
         </div>
     </div>
 </body>
@@ -30,8 +30,10 @@
 * {
     background-color: #000000;
     overflow: hidden;
+    border: none;
 }
 col-md-4{
+    width: 100%
     width: 100%
 }
 iframe {
@@ -42,8 +44,8 @@ iframe {
 <script>
 var u2html = "https://www.youtube-nocookie.com/embed/";
 
-var array = ["QImncm7lr2w", "nMK1GUTjbbc", "e4VJS-ZAJj4", "6GXK2XMGgUc", "z1G5UBjrIqk", "EQ_RDplRZdo", "gko-gguvgDM", "wnNJcI2DzBE"];
-//, "HwUzhqm259g", "EaUVZ49xKQ4"
+var array = ["QImncm7lr2w", "nMK1GUTjbbc", "e4VJS-ZAJj4", "6GXK2XMGgUc", "z1G5UBjrIqk", "EQ_RDplRZdo", "gko-gguvgDM", "wnNJcI2DzBE", "HwUzhqm259g"];
+//, "EaUVZ49xKQ4"
 for (var idx in array) {
     console.log(idx);
     document.getElementById("u"+idx).src = u2html + array[idx];
